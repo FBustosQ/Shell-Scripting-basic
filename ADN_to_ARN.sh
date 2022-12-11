@@ -26,11 +26,11 @@ do
 		seq=$(tail -n1 "$file")
 
 		echo "Para el archivo $namefile de secuencia de ARN:"
-		echo "$seq"
-		echo "La cantidad de Adenina en la secuencia es de:${#adenina}"
-		echo "La cantidad de Guanina en la secuencia es de:${#guanina}"
-                echo "La cantidad de Citosina en la secuencia es de:${#citocina}"
-		echo "La cantidad de Uracilo en la secuencia es de:${#uracilo}"
+                echo "$seq"
+                echo ""
+                echo "La cantidad de bases de la secuencia es: Adenina=${#adenina}, Guanina=${#guanina}, Citocina=${#citocina}, Uracilo=${#uracilo}"
+                echo ""
+
 
 	  else
 		 echo "esto no esta funcionando"
