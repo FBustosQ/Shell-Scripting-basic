@@ -25,15 +25,14 @@ do
 		uracilo=$(sed "2s/[GCA]//g" "$file" | tail -n1)
 		seq=$(tail -n1 "$file")
 
-		echo "Para el archivo $namefile de secuencia de ARN:"
+		echo ""
+                echo "Para el archivo $namefile de secuencia de ARN:"
                 echo "$seq"
+                echo "La cantidad de bases de $namefile es: Adenina=${#adenina}, Guanina=${#guanina}, Citocina=${#citocina}, Uracilo=${#uracilo}"
                 echo ""
-                echo "La cantidad de bases de la secuencia es: Adenina=${#adenina}, Guanina=${#guanina}, Citocina=${#citocina}, Uracilo=${#uracilo}"
-                echo ""
-
-
-	  else
-		 echo "esto no esta funcionando"
-	fi
+          else
+                 echo "esto no esta funcionando"
+        fi
  done
+
 #nota no funciona sed si en vez de un archivo es una salida de un comando
